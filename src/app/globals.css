@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --secondary: #c8c8c2;
+  --muted: #9a9a94;
+  --border: rgba(255, 255, 255, 0.16);
+  --surface: #0f0f0f;
+  --surface-strong: #171717;
+  --surface-muted: #242424;
+  --dark: #1c1c1c;
+  --accent: #d8d1c2;
+  --accent-electric: #008aff;
+  --accent-foreground: #000000;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --color-dark: var(--dark);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-surface-muted: var(--surface-muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-electric: var(--accent-electric);
+  --color-accent-foreground: var(--accent-foreground);
+  --font-sans: var(--font-poppins);
+  --font-display: var(--font-poppins);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #000000;
+}
+
+body {
+  background: #000000;
+  color: var(--foreground);
+  font-family: var(--font-poppins), "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(216, 209, 194, 0.65);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-poppins), "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: -0.05em;
+  }
+
+  p {
+    color: var(--secondary);
+  }
+}
+
+@layer utilities {
+  .section-shell {
+    @apply mx-auto w-full max-w-[1440px] px-3 sm:px-4 md:px-5 lg:px-6;
+  }
+
+  .section-space {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  .page-frame {
+    @apply relative flex min-h-screen w-full flex-col bg-background;
+  }
+
+  .editorial-kicker {
+    @apply text-[10px] font-semibold uppercase tracking-[0.18em] text-foreground;
+  }
+
+  .editorial-meta {
+    @apply text-[10px] uppercase tracking-[0.08em] text-muted;
+  }
+
+  .section-rule {
+    @apply border-t border-border;
+  }
+
+  .boxed-link {
+    @apply inline-flex items-center justify-center border border-border px-2.5 py-1 text-[10px] uppercase tracking-[0.08em] text-foreground transition-colors duration-200 hover:bg-foreground hover:text-background;
+  }
+
+  .image-treatment {
+    background:
+      linear-gradient(160deg, rgba(255, 255, 255, 0.7), transparent 42%),
+      linear-gradient(180deg, rgba(17, 17, 17, 0.04), rgba(17, 17, 17, 0.18)),
+      radial-gradient(circle at 18% 12%, rgba(255, 255, 255, 0.82), transparent 32%),
+      linear-gradient(135deg, #f0efec 4%, #cdcbc6 36%, #8e8d88 72%, #4a4a46 100%);
+    filter: grayscale(85%) contrast(1.05);
+  }
+
+  .on-light-surface p {
+    color: #4a4a46;
+  }
+
+  .portfolio-script {
+    font-family:
+      "sloop-script-one",
+      "bickham-script-pro-3",
+      "Snell Roundhand",
+      "Apple Chancery",
+      cursive;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+  }
+}
