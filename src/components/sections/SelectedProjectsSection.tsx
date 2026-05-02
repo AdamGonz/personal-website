@@ -46,7 +46,7 @@ export function SelectedProjectsSection() {
                 ) : null}
                 <div className="absolute inset-0 bg-black/0 transition-colors duration-300 ease-out group-hover:bg-black/18" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative aspect-square w-[34%] overflow-hidden bg-white/95 opacity-0 shadow-[0_18px_60px_rgba(0,0,0,0.28)] transition-all duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 motion-safe:scale-[0.94]">
+                  <div className="relative aspect-[5/4] w-[42%] overflow-hidden bg-white/95 opacity-0 shadow-[0_18px_60px_rgba(0,0,0,0.28)] transition-all duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 motion-safe:scale-[0.94]">
                     {subImageSrc ? (
                       <Image
                         src={subImageSrc}

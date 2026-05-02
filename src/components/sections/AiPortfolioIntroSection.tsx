@@ -1,15 +1,27 @@
 const introColumns = [
   {
     label: "Focus",
-    items: ["AI Systems", "Automation", "Full-Stack Development"],
+    items: [
+      "AI Systems",
+      "Automation",
+      "Full-Stack Development",
+      "Product & Web Design",
+    ],
   },
   {
     label: "Capabilities",
-    items: ["RAG Systems", "Backend APIs", "Data Pipelines", "Product Design"],
+    items: [
+      "RAG Systems",
+      "Backend APIs",
+      "Data Pipelines",
+      "System Design",
+      "Frontend Architecture",
+      "UI/UX & Brand Design",
+    ],
   },
   {
     label: "Timeline",
-    items: ["2025 — Present"],
+    items: ["2023 — Present"],
   },
 ];
 
@@ -35,10 +47,10 @@ export function AiPortfolioIntroSection() {
               </h2>
             </div>
             <div className="min-w-0 lg:w-[52vw] lg:max-w-[880px]">
-              I build AI systems that help businesses work smarter — automating
-                workflows, improving decisions, and making complex tasks scalable.
-                My focus is on practical applications that bring real value,
-                especially for smaller teams.
+              I design and build digital systems — from AI tools and data
+              platforms to full-stack applications and brand-driven web
+              experiences. My work focuses on combining engineering, design,
+              and automation to create scalable, real-world solutions.
             </div>
 
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,52vw)_minmax(0,1fr)] lg:items-start">
