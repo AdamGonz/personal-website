@@ -1,9 +1,12 @@
 "use client";
 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Nav } from "@/components/layout/Nav";
 
 export function Header() {
+  const pathname = usePathname();
   const [isPastHero, setIsPastHero] = useState(false);
 
   useEffect(() => {
@@ -29,13 +32,13 @@ export function Header() {
           <div className="justify-self-start">
             <Nav />
           </div>
-          <a
-            href="#home"
+          <Link
+            href={pathname === "/" ? "#home" : "/"}
             aria-label="Go to home"
             className="pointer-events-auto justify-self-center text-[20px] font-bold uppercase tracking-[-0.06em] text-white transition-opacity duration-300 hover:opacity-70 md:absolute md:left-1/2 md:-translate-x-1/2 md:text-[24px]"
           >
             AXTØP4NI
-          </a>
+          </Link>
           <div className="hidden md:block" aria-hidden="true" />
         </div>
       </div>

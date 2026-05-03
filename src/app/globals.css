@@ -98,6 +98,30 @@ a {
     @apply inline-flex items-center justify-center border border-border px-2.5 py-1 text-[10px] uppercase tracking-[0.08em] text-foreground transition-colors duration-200 hover:bg-foreground hover:text-background;
   }
 
+  .project-text-label {
+    @apply text-[10px] font-semibold uppercase tracking-[0.08em] text-foreground;
+  }
+
+  .project-text-meta {
+    @apply text-[12px] leading-[1.45] text-secondary md:text-[12px];
+  }
+
+  .project-text-body {
+    @apply text-[14px] leading-6 text-secondary md:text-[14px];
+  }
+
+  .project-text-summary {
+    @apply text-[16px] leading-[1.5] text-secondary md:text-[18px];
+  }
+
+  .project-text-feature-title {
+    @apply text-[14px] font-semibold leading-[1.35] text-foreground md:text-[16px];
+  }
+
+  .project-text-feature-copy {
+    @apply text-[14px] leading-[1.6] text-secondary md:text-[14px];
+  }
+
   .image-treatment {
     background:
       linear-gradient(160deg, rgba(255, 255, 255, 0.7), transparent 42%),

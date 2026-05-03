@@ -5,7 +5,7 @@ import { SelectedProjectsSection } from "@/components/sections/SelectedProjectsS
 
 export default function Home() {
   return (
-    <div className="page-frame">
+    <div id="home" className="page-frame">
       <Header />
       <main className="flex-1">
         <HeroSection />
