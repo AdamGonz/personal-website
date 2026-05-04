@@ -1,3 +1,4 @@
+import { AboutSection } from "@/components/sections/AboutSection";
 import { Header } from "@/components/layout/Header";
 import { AiPortfolioIntroSection } from "@/components/sections/AiPortfolioIntroSection";
 import { HeroSection } from "@/components/sections/HeroSection";
@@ -11,6 +12,7 @@ export default function Home() {
         <HeroSection />
         <AiPortfolioIntroSection />
         <SelectedProjectsSection />
+        <AboutSection />
       </main>
     </div>
   );

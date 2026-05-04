@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "lenis/dist/lenis.css";
 
+import { Footer } from "@/components/layout/Footer";
 import { SmoothScroll } from "@/components/ui/SmoothScroll";
 
 import "./globals.css";
@@ -15,8 +16,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Frontend portfolio built with Next.js, TypeScript, and Tailwind CSS.",
+  title: "Adam Axtopani Gonzales",
+  description: "Adam Axtopani Gonzales' personal website and portfolio",
 };
 
 export default function RootLayout({
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body className="flex min-h-full flex-col bg-background font-sans text-foreground">
         <SmoothScroll />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -28,7 +28,7 @@ const introColumns = [
 export function AiPortfolioIntroSection() {
   return (
     <section
-      id="projects"
+      id="featured-works"
       className="relative flex min-h-screen items-center overflow-hidden bg-background text-foreground"
     >
       <div className="absolute top-1/2 right-[10vw] hidden w-[40vw] max-w-[500px] -translate-y-1/2 lg:block">
@@ -36,9 +36,9 @@ export function AiPortfolioIntroSection() {
       </div>
 
       <div className="relative z-10 w-full px-5 py-16 md:px-6 md:py-20 lg:py-24">
-        <div className="w-full">
+        <div className="mx-auto w-full max-w-[1560px]">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)] lg:grid-rows-[auto_auto] lg:items-start lg:gap-y-10">
-            <div className="min-w-0 lg:w-[52vw] lg:max-w-[880px]">
+            <div className="min-w-0 max-w-[880px]">
               <h2 className="text-[19vw] font-semibold uppercase leading-[0.82] text-foreground sm:text-[15vw] md:text-[11.8vw] lg:text-[8.15vw]">
                 FEATURED
               </h2>
@@ -46,7 +46,7 @@ export function AiPortfolioIntroSection() {
                 WORKS
               </h2>
             </div>
-            <div className="min-w-0 lg:w-[52vw] lg:max-w-[880px]">
+            <div className="min-w-0 max-w-[880px]">
               I design and build digital systems — from AI tools and data
               platforms to full-stack applications and brand-driven web
               experiences. My work focuses on combining engineering, design,
@@ -54,7 +54,7 @@ export function AiPortfolioIntroSection() {
             </div>
 
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,52vw)_minmax(0,1fr)] lg:items-start">
-              <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-8 lg:w-[52vw] lg:max-w-[880px]">
+              <div className="grid max-w-[880px] grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-8">
                 {introColumns.map((column) => (
                   <div key={column.label} className="space-y-2.5">
                     <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-muted">

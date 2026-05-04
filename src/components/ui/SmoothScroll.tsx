@@ -3,6 +3,12 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
 
+declare global {
+  interface Window {
+    __portfolioLenis?: Lenis;
+  }
+}
+
 export function SmoothScroll() {
   useEffect(() => {
     const lenis = new Lenis({
@@ -12,7 +18,10 @@ export function SmoothScroll() {
       },
     });
 
+    window.__portfolioLenis = lenis;
+
     return () => {
+      delete window.__portfolioLenis;
       lenis.destroy();
     };
   }, []);

@@ -12,7 +12,9 @@ export function ProjectFeaturesSection({
     (headline, word) =>
       headline.replace(
         word,
-        `<span class="portfolio-script text-[0.88em] font-normal text-white/92 normal-case">${word}</span>`,
+        `<span class="portfolio-script text-[0.88em] font-normal text-white/92 normal-case">${
+          word.charAt(0).toUpperCase() + word.slice(1)
+        }</span>`,
       ),
     featuresSection.headline,
   );

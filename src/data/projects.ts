@@ -95,7 +95,7 @@ export const tochtliFeaturedWork: FeaturedWorkContent = {
 export const stackedProjectGallery: StackedProjectGalleryItem[] = [
   {
     slug: "tochtli-ai-studio",
-    title: "Project 01 — Tochtli AI Studio",
+    title: "Work 01 — Tochtli AI Studio",
     year: "2025",
     description: "AI system for generating content from cultural sources.",
     mainImageFileName: "tochtli-ai-studio-main.jpg",
@@ -103,7 +103,7 @@ export const stackedProjectGallery: StackedProjectGalleryItem[] = [
   },
   {
     slug: "cyber-risk-quantification-platform",
-    title: "Project 02 — Cyber Risk Quantification Platform",
+    title: "Work 02 — Cyber Risk Quantification Platform",
     year: "2025",
     description: "Risk scoring system for prioritizing vulnerabilities.",
     mainImageFileName: "cyber-risk-quantification-platform-main.jpg",
@@ -111,7 +111,7 @@ export const stackedProjectGallery: StackedProjectGalleryItem[] = [
   },
   {
     slug: "vendor-management-dashboard",
-    title: "Project 03 — Vendor Management Dashboard",
+    title: "Work 03 — Vendor Management Dashboard",
     year: "2024",
     description: "Tool for automating vendor and event workflows.",
     mainImageFileName: "vendor-management-dashboard-main.jpg",
@@ -119,7 +119,7 @@ export const stackedProjectGallery: StackedProjectGalleryItem[] = [
   },
   {
     slug: "groovo",
-    title: "Project 04 — Groovo",
+    title: "Work 04 — Groovo",
     year: "2024",
     description: "Music analytics app using Spotify data.",
     mainImageFileName: "groovo-main.jpg",
@@ -129,10 +129,111 @@ export const stackedProjectGallery: StackedProjectGalleryItem[] = [
 
 export const projectDetailPages: ProjectDetailPage[] = [
   {
+    slug: "tochtli-ai-studio",
+    name: "Tochtli AI Studio",
+    timeline: "March 2026 — Present",
+    client: "Tochtli",
+    role: "AI Engineer / Full-Stack Developer / System Designer",
+    projectType: "AI System / Content Automation Platform",
+    hero: {
+      title: "AI-Driven Content Built on Cultural Knowledge",
+      intro:
+        "I designed Tochtli AI Studio, an AI-powered content system that transforms cultural source material into structured, high-quality outputs. By combining retrieval-based generation with curated knowledge sources, the system produces content that is both context-aware and culturally grounded.",
+      statement:
+        "Not just generating content — preserving context.",
+      summary:
+        "AI-powered system for generating culturally grounded content using retrieval-based knowledge.",
+      mainImageFileName: "tochtli-ai-studio-main.jpg",
+      peekingImageFileName: "tochtli-ai-studio-sub.jpg",
+      mood: "Editorial, clean, intelligent, system-focused with cultural undertones",
+    },
+    links: {
+      live: "TBD",
+      caseStudy: "TBD",
+      github: "TBD",
+    },
+    sectionLead: {
+      eyebrow: "AI Content System",
+      heading: "Creating central knowledge bases to power content planning.",
+      body:
+        "Tochtli AI Studio is designed to automate content creation while maintaining cultural accuracy and depth. Instead of relying on generic generation, the system ingests curated materials such as books, PDFs, and visual references, converts them into embeddings, and retrieves relevant context during generation. This allows outputs to remain grounded in real knowledge while scaling content production for media, storytelling, and brand use.",
+    },
+    featuresSection: {
+      eyebrow: "Core System",
+      headline: "FROM KNOWLEDGE TO GENERATED content",
+      scriptWords: ["content"],
+      columns: [
+        {
+          index: "01.",
+          title: "Knowledge Ingestion & Processing",
+          items: [
+            {
+              label: "Document Ingestion Pipeline",
+              description:
+                "Processes PDFs, texts, and cultural sources into structured data for downstream use.",
+            },
+            {
+              label: "Embedding Generation",
+              description:
+                "Converts content into vector embeddings for semantic search and retrieval.",
+            },
+            {
+              label: "Curated Knowledge Base",
+              description:
+                "Maintains a controlled dataset to ensure outputs remain culturally accurate and relevant.",
+            },
+          ],
+        },
+        {
+          index: "02.",
+          title: "AI Generation System (RAG + LangChain)",
+          items: [
+            {
+              label: "Retrieval-Augmented Generation (RAG)",
+              description:
+                "Combines retrieved context with language models to generate grounded responses.",
+            },
+            {
+              label: "LangChain Workflow Orchestration",
+              description:
+                "Uses LangChain to manage prompt chaining, retrieval flow, and output structuring.",
+            },
+            {
+              label: "Context-Aware Prompting",
+              description:
+                "Dynamically injects relevant knowledge into prompts to improve accuracy and depth.",
+            },
+          ],
+        },
+        {
+          index: "03.",
+          title: "Automation & Content Workflows",
+          items: [
+            {
+              label: "Content Generation Pipelines",
+              description:
+                "Automates creation of posts, captions, and long-form content from source material.",
+            },
+            {
+              label: "Brand-Aligned Output Formatting",
+              description:
+                "Structures outputs to match tone, style, and cultural identity of the brand.",
+            },
+            {
+              label: "Scalable Content System",
+              description:
+                "Designed to support high-volume generation while maintaining consistency.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
     slug: "cyber-risk-quantification-platform",
     name: "Cyber Risk Quantification Platform",
     timeline: "Jan 2026 — Present",
-    client: "Brinqa (Industry-Sponsored Project)",
+    client: "Brinqa (Industry-Sponsored Work)",
     role: "Full-Stack Engineer / Product Owner (Frontend, Backend, System Design, Data Modeling)",
     projectType: "Security Platform / Risk Intelligence System",
     hero: {
@@ -254,7 +355,7 @@ export const projectDetailPages: ProjectDetailPage[] = [
       github: "TBD",
     },
     sectionLead: {
-      eyebrow: "Project Overview",
+      eyebrow: "Work Overview",
       heading: "Built for organizers who needed clarity under pressure.",
       body:
         "This platform centralized vendor registration, payment tracking, and booth assignment into one operational system. It gave the team a cleaner way to manage live event logistics and created a strong base for the deeper case-study sections that will follow.",
@@ -335,7 +436,7 @@ export const projectDetailPages: ProjectDetailPage[] = [
     slug: "groovo",
     name: "Groovo",
     timeline: "2025 — Present",
-    client: "Personal Project",
+    client: "Personal Work",
     role: "Full-Stack Developer (Frontend, API Integration, Product Design)",
     projectType: "Social Platform / Music Discovery App",
     hero: {

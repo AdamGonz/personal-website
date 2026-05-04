@@ -18,7 +18,7 @@ export function ProjectSectionLead({ project }: ProjectSectionLeadProps) {
         </div>
 
         <div className="space-y-4 self-end">
-          <p className="project-text-label">About This Project</p>
+          <p className="project-text-label">About This Work</p>
           <p className="project-text-body">{project.sectionLead.body}</p>
         </div>
       </div>
