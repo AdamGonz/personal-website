@@ -18,18 +18,18 @@ export function AboutSection() {
     >
       <div className="px-5 pt-18 pb-12 md:px-6 md:pt-24 md:pb-14 lg:pt-28 lg:pb-16">
         <div className="mx-auto flex w-full max-w-[1560px] items-start">
-          <div className="grid w-full grid-cols-1 gap-14 lg:grid-cols-[minmax(560px,1.12fr)_minmax(0,1fr)] lg:items-end lg:gap-14 xl:gap-18">
-            <div className="space-y-12 lg:space-y-12">
-              <div className="space-y-2">
-                <h2 className="text-[12.5vw] font-semibold uppercase leading-[0.84] tracking-[-0.08em] text-foreground sm:text-[9.8vw] md:text-[8.3vw] lg:text-[4.9vw] xl:text-[5vw]">
+          <div className="grid w-full grid-cols-1 gap-14 lg:grid-cols-[minmax(0,1.38fr)_minmax(320px,0.62fr)] lg:items-end lg:gap-16 xl:gap-20">
+            <div className="space-y-10 lg:space-y-12">
+              <div className="space-y-1">
+                <h2 className="max-w-[9ch] text-[15vw] font-semibold uppercase leading-[0.8] tracking-[-0.095em] text-foreground sm:text-[12vw] md:text-[10vw] lg:max-w-none lg:text-[7.3vw] xl:text-[7.1vw]">
                   FULL-STACK ENGINEER
                 </h2>
-                <p className="portfolio-script text-[14vw] leading-[0.8] text-foreground sm:text-[10.8vw] md:text-[8.2vw] lg:text-[10vw]">
+                <p className="portfolio-script text-[14.5vw] leading-[0.76] text-foreground sm:text-[11.2vw] md:text-[8.8vw] lg:text-[8.4vw] xl:text-[8vw]">
                   Driven
                 </p>
               </div>
 
-              <p className="max-w-[42ch] text-[15px] leading-[1.8] text-secondary md:text-[16px] lg:max-w-[44ch]">
+              <p className="max-w-[58ch] text-[15px] leading-[1.8] text-secondary md:text-[16px] lg:max-w-[56ch]">
                 Hey, I’m Adam. I’m a full-stack engineer and product builder
                 focused on AI systems, data platforms, and real-world tools. I
                 build systems that simplify workflows, improve decision-making,
@@ -40,7 +40,7 @@ export function AboutSection() {
 
             <div className="flex items-start justify-start lg:justify-end">
               <div className="w-full max-w-[1000px]">
-                <div className="flex flex-col items-start gap-5 md:gap-6 lg:items-end">
+                <div className="flex flex-col items-start gap-5 md:gap-6 lg:items-end lg:pt-6">
                   <div className="relative h-[52px] w-[84px] shrink-0 overflow-hidden bg-surface sm:h-[64px] sm:w-[108px] md:h-[76px] md:w-[128px] lg:h-[88px] lg:w-[146px]">
                     <Image
                       src={accentImage}
@@ -51,7 +51,7 @@ export function AboutSection() {
                     />
                   </div>
                   <div className="min-w-0 text-right">
-                    <h2 className="text-[13vw] font-semibold uppercase leading-[0.82] tracking-[-0.08em] text-foreground sm:text-[9.8vw] md:text-[8vw] lg:text-[5.35vw] xl:text-[4vw]">
+                    <h2 className="max-w-[12ch] text-[13.2vw] font-semibold uppercase leading-[0.82] tracking-[-0.09em] text-foreground sm:text-[10vw] md:text-[8.1vw] lg:text-[5.8vw] xl:text-[5.1vw]">
                       TO CREATE TOOLS THAT SIMPLIFY COMPLEX WORKFLOWS
                     </h2>
                   </div>

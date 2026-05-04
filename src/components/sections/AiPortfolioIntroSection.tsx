@@ -1,3 +1,19 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
+import Image from "next/image";
+
+import worksDisplay01 from "@/assets/images/1-works-display.jpg";
+import worksDisplay02 from "@/assets/images/2-works-display.jpg";
+import worksDisplay03 from "@/assets/images/3-works-display.jpg";
+import worksDisplay04 from "@/assets/images/4-works-display.jpg";
+import worksDisplay05 from "@/assets/images/5-works-display.jpg";
+import worksDisplay06 from "@/assets/images/6-works-display.jpg";
+import worksDisplay07 from "@/assets/images/7-works-display.jpg";
+import worksDisplay08 from "@/assets/images/8-works-display.jpg";
+import worksDisplay09 from "@/assets/images/9-works-display.jpg";
+
 const introColumns = [
   {
     label: "Focus",
@@ -25,14 +41,53 @@ const introColumns = [
   },
 ];
 
+const worksDisplayImages = [
+  worksDisplay01,
+  worksDisplay02,
+  worksDisplay03,
+  worksDisplay04,
+  worksDisplay05,
+  worksDisplay06,
+  worksDisplay07,
+  worksDisplay08,
+  worksDisplay09,
+];
+
+const rotationIntervalMs = 500;
+
 export function AiPortfolioIntroSection() {
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      setActiveImageIndex((currentIndex) =>
+        currentIndex === worksDisplayImages.length - 1 ? 0 : currentIndex + 1,
+      );
+    }, rotationIntervalMs);
+
+    return () => {
+      window.clearInterval(intervalId);
+    };
+  }, []);
+
+  const activeImage = worksDisplayImages[activeImageIndex];
+
   return (
     <section
       id="featured-works"
       className="relative flex min-h-screen items-center overflow-hidden bg-background text-foreground"
     >
       <div className="absolute top-1/2 right-[10vw] hidden w-[40vw] max-w-[500px] -translate-y-1/2 lg:block">
-        <div className="aspect-[8/9] overflow-hidden rounded-[16px] bg-[#ff1208]" />
+        <div className="relative aspect-[8/9] overflow-hidden rounded-[16px]">
+          <Image
+            key={activeImage.src}
+            src={activeImage}
+            alt=""
+            fill
+            sizes="(min-width: 1024px) min(40vw, 500px), 100vw"
+            className="object-cover"
+          />
+        </div>
       </div>
 
       <div className="relative z-10 w-full px-5 py-16 md:px-6 md:py-20 lg:py-24">
@@ -75,7 +130,16 @@ export function AiPortfolioIntroSection() {
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-[16px] bg-[#ff1208] aspect-[4/5] sm:aspect-[5/6] lg:hidden" />
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[16px] sm:aspect-[5/6] lg:hidden">
+              <Image
+                key={`${activeImage.src}-mobile`}
+                src={activeImage}
+                alt=""
+                fill
+                sizes="100vw"
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>

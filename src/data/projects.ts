@@ -96,32 +96,36 @@ export const stackedProjectGallery: StackedProjectGalleryItem[] = [
   {
     slug: "tochtli-ai-studio",
     title: "Work 01 — Tochtli AI Studio",
-    year: "2025",
-    description: "AI system for generating content from cultural sources.",
+    year: "2026",
+    description:
+      "AI content system that turns cultural source material into grounded brand content.",
     mainImageFileName: "tochtli-ai-studio-main.jpg",
     subImageFileName: "tochtli-ai-studio-sub.jpg",
   },
   {
     slug: "cyber-risk-quantification-platform",
     title: "Work 02 — Cyber Risk Quantification Platform",
-    year: "2025",
-    description: "Risk scoring system for prioritizing vulnerabilities.",
+    year: "2026",
+    description:
+      "Cyber risk platform that prioritizes vulnerabilities using threat and business context.",
     mainImageFileName: "cyber-risk-quantification-platform-main.jpg",
     subImageFileName: "cyber-risk-quantification-platform-sub.jpg",
   },
   {
     slug: "vendor-management-dashboard",
     title: "Work 03 — Vendor Management Dashboard",
-    year: "2024",
-    description: "Tool for automating vendor and event workflows.",
+    year: "2025",
+    description:
+      "Vendor operations dashboard for managing outreach, scheduling, and event workflows.",
     mainImageFileName: "vendor-management-dashboard-main.jpg",
     subImageFileName: "vendor-management-dashboard-sub.jpg",
   },
   {
     slug: "groovo",
     title: "Work 04 — Groovo",
-    year: "2024",
-    description: "Music analytics app using Spotify data.",
+    year: "2025",
+    description:
+      "Social music platform for logging albums, sharing reviews, and discovering taste.",
     mainImageFileName: "groovo-main.jpg",
     subImageFileName: "groovo-sub.jpg",
   },
@@ -435,7 +439,7 @@ export const projectDetailPages: ProjectDetailPage[] = [
   {
     slug: "groovo",
     name: "Groovo",
-    timeline: "2025 — Present",
+    timeline: "Sept 2025 — Dec 2025",
     client: "Personal Work",
     role: "Full-Stack Developer (Frontend, API Integration, Product Design)",
     projectType: "Social Platform / Music Discovery App",
@@ -447,7 +451,7 @@ export const projectDetailPages: ProjectDetailPage[] = [
         "Where music taste becomes a social experience.",
       summary:
         "Social platform for discovering, reviewing, and sharing music with others.",
-      mainImageFileName: "groovo-main.jpg",
+      mainImageFileName: "groovo-page-main.jpg",
       peekingImageFileName: "groovo-sub.jpg",
       mood: "Modern, expressive, social, slightly playful but clean",
     },
