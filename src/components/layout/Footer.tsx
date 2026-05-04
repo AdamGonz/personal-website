@@ -42,10 +42,7 @@ export function Footer() {
   };
 
   return (
-    <footer
-      id="contact"
-      className="bg-background px-5 pb-5 text-foreground md:px-6 md:pb-6"
-    >
+    <footer className="bg-background px-5 pb-5 text-foreground md:px-6 md:pb-6">
       <div className="w-full border-t border-white/10 pt-6 md:pt-8">
         <div className="grid grid-cols-1 gap-3 text-[13px] uppercase tracking-[0.06em] text-foreground md:grid-cols-3 md:items-center md:text-[14px]">
           <button

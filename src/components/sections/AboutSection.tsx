@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import adamImage from "@/assets/images/Adam.jpg";
 import accentImage from "@/assets/images/tochtli-ai-studio-sub.jpg";
 
 const bodyParagraphs = [
@@ -29,13 +30,25 @@ export function AboutSection() {
                 </p>
               </div>
 
-              <p className="max-w-[58ch] text-[15px] leading-[1.8] text-secondary md:text-[16px] lg:max-w-[56ch]">
-                Hey, I’m Adam. I’m a full-stack engineer and product builder
-                focused on AI systems, data platforms, and real-world tools. I
-                build systems that simplify workflows, improve decision-making,
-                and make complex processes easier to use — with a strong focus
-                on clean, intuitive user experience.
-              </p>
+              <div className="flex flex-col gap-6 md:gap-8 lg:flex-row lg:items-stretch">
+                <div className="relative order-2 aspect-square h-[120px] w-[120px] overflow-hidden sm:h-[120px] sm:w-[120px] lg:order-1 lg:h-[120px] lg:w-[120px] lg:flex-none">
+                  <Image
+                    src={adamImage}
+                    alt="Portrait of Adam Gonzales"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 1024px) 18vw, (min-width: 768px) 260px, 220px"
+                  />
+                </div>
+
+                <p className="order-1 max-w-[70ch] text-[15px] leading-[1.8] text-secondary md:text-[16px] lg:order-2 lg:max-w-[67ch] lg:flex-1">
+                  Hey, I’m Adam. I’m a full-stack engineer and product builder
+                  focused on AI systems, data platforms, and real-world tools.
+                  I build systems that simplify workflows, improve
+                  decision-making, and make complex processes easier to use —
+                  with a strong focus on clean, intuitive user experience.
+                </p>
+              </div>
             </div>
 
             <div className="flex items-start justify-start lg:justify-end">
